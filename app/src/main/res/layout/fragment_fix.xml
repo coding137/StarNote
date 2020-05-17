@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devStereo.owls.diary.FixFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="377dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+
+        android:theme="?attr/dialogTheme"
+        tools:style="@style/AlertDialog.AppCompat.Light">
+
+        <EditText
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Topic"
+
+            android:textColor="#cccccc"
+            />
+
+        <EditText
+            android:id="@+id/contents"
+            android:layout_width="330dp"
+            android:layout_height="256dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:fadingEdge="horizontal"
+            android:hint="text area"
+            android:text="contents"
+            android:textColor="#cccccc"
+
+            android:textColorHint="#5e5e5e" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/deletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="75dp"
+                android:background="#00FFFFFF"
+                android:src="@mipmap/ic_delete"
+                />
+            <ImageButton
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:background="#00FFFFFF"
+                android:src="@mipmap/ic_cancel"
+                android:onClick="goback"
+                />
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+
+                android:background="#00FFFFFF"
+                android:src="@mipmap/ic_check" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
